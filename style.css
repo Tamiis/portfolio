@@ -134,7 +134,7 @@ header {
 }
 
 /* ===== NAVEGAÇÃO ===== */
-nav ul {
+#navLinks {
   list-style: none;
   display: flex;
   gap: 2.5rem;
@@ -142,7 +142,7 @@ nav ul {
   flex-wrap: wrap;
 }
 
-nav li {
+#navLinks {
   position: relative;
 }
 
@@ -191,6 +191,10 @@ nav a:hover::after {
   transition: all var(--transition-fast);
   box-shadow: 0 4px 15px var(--shadow-hover);
   font-family: 'Inter', sans-serif;
+  position: fixed;
+  top: 20px;      /* distância do topo */
+  right: 20px;    /* distância da direita */
+  z-index: 9999;  /* fica acima de tudo */
 }
 
 .mode-btn:hover {
